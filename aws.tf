@@ -1,5 +1,7 @@
 provider "aws" {
     region = "us-east-2"
+    profile = "default"
+    shared_credentials_file = "/var/.aws/.aws/credentials"
 }
 
 resource "aws_instance" "terraform_instance" {
